@@ -1,0 +1,64 @@
+@import "../../colors.scss";
+
+.foldable-menu {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.1s ease-in-out;
+  overflow: hidden;
+}
+
+.foldable-menu.open {
+  transform: scaleX(1);
+}
+
+#foldableMenu {
+  width: 270px;
+  height: 830px;
+  background-color: $darkbluemde;
+  z-index: 2000;
+  .closeFoldableButton {
+    position: relative;
+    top: 20px;
+    right: 85px;
+    background: none;
+    border: none;
+    .closeIcon {
+      color: $creammde;
+      font-size: 40px;
+    }
+  }
+  .bulletList {
+    margin-top: 100px;
+    li {
+      list-style-type: none;
+      text-align: left;
+      margin-bottom: 25px;
+      a {
+        font-family: $atkinsonmde;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 20px;
+        color: $creammde;
+        text-decoration: none;
+      }
+    }
+  }
+  .helpAndLogout {
+    margin-top: 300px;
+    li {
+      list-style-type: none;
+      text-align: left;
+      margin-bottom: 20px;
+      a {
+        font-family: $atkinsonmde;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: $creammde;
+        text-decoration: none;
+      }
+    }
+  }
+}

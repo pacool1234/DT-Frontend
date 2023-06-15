@@ -1,0 +1,20 @@
+@import "../../colors";
+
+.main_app_init {
+    background-color: $creammde;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: -2;
+
+    .logo_animation_init {
+        
+
+        .logo_animation_agora {
+            max-width: 100%;
+        }
+
+
+    }
+}

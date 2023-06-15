@@ -1,0 +1,211 @@
+@import "../../colors";
+
+
+// ESTRUCTURA DIV IMAGEN
+
+.singleEventMain {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $creammde;
+    width: 100vw;
+    height: 100vh;
+    
+    .eventPic {
+        display: flex;
+        width: 100%;
+        height: 37vh;
+        margin-top: 30.8%;
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .return_to_events_button {
+        background-color: rgba(0, 67, 104, 1);
+        border-radius: 50%;
+        width: 5.3%;
+        margin-top: 36%;
+        padding: 1%;
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        padding-left: 2%;
+        margin-left: -77%;
+
+    }
+
+    .eventPicFooter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        width: 100%;
+        height: 5vh;
+        background-color: $orangemde;
+        column-gap: 10px;
+
+
+        .picFooterText {
+            font-family: $atkinsonmde;
+            font-weight: 600;
+            font-size: 17px;
+            color: $whitemde;
+        }
+
+        .picFooterIcon {
+            display: flex;
+            flex-grow: 0.1;
+        }
+
+    }
+
+    .dotsOverlay {
+        position: fixed;
+        margin-top: 92%;
+        left: -20%;
+        transform: translateX(50%);
+        z-index: 21;
+    }
+
+    // ESTRUCTURA DIV INFORMACIÓN
+
+
+    .eventBodyMain {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        .bodyHeaderMain {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .head_event_single_desing {
+                display: flex;
+                flex-direction: row;
+                gap:3%;
+                .headerMainLeft {
+                    display: flex;
+                    flex-direction: column;
+                    width: 75%;
+                    
+                    .eventType {
+                        align-self: flex-start;
+                        font-family: $atkinsonmde;
+                        font-size: 18px;
+                        color: $darkbluemde;
+                        font-weight: 500;
+                        margin-top: 4%;
+                        margin-bottom: 0%;
+                        margin-left: 0%;
+                        margin-right: 0%;
+                    }
+
+                    .eventTitle {
+                        align-self: flex-start;
+                        line-height: normal;
+                        font-family: $atkinsonmde;
+                        text-align: left;
+                        font-size: 26px;
+                        color: $darkbluemde;
+                        font-weight: 600;
+                        margin-top: 0;
+                        margin-bottom: 0%;
+                        margin-left: 0%;
+                        margin-right: 0%;
+                        width: 94%;
+                    }
+                }
+
+                .mainButton {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: center;
+                    flex-grow: 1;
+                    background-color: $darkbluemde;
+                    border-radius: 5px;
+                    margin-top: 15px;
+                    height: 40px;
+
+                    .mainButtonText {
+                        font-family: $atkinsonmde;
+                        font-size: 18px;
+                        text-align: center;
+                        flex-grow: 1;
+                        color: $creammde;
+                        margin-left: 25px;
+                        margin-right: 25px;
+                    }
+                }
+            }
+
+            .bodyContentMain {
+                display: inline;
+                margin-top: 25px;
+                font-family: $atkinsonmde;
+                font-size: 15px;
+                text-align: justify;
+                color: $blackmde;
+                font-weight: 400;
+                line-height: 20px;                
+                text-align: left;
+                width: 100%;
+                margin-bottom: 6%;
+            }
+
+        }
+
+
+
+
+
+        .bodyFooterUp {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: -20px;
+
+            .footerUpTime {
+                font-family: $atkinsonmde;
+                font-size: 14px;
+                color: $darkbluemde;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+
+            .footerUpAsistentes {
+                font-family: $atkinsonmde;
+                font-size: 13px;
+                color: $darkbluemde;
+                font-weight: 400;
+
+            }
+        }
+
+        .bodyFooterDown {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: -30px;
+
+            .footerDownDate {
+                font-family: $atkinsonmde;
+                font-size: 11.5px;
+                color: $darkbluemde;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+
+            .footerDownInscritos {
+                font-family: $atkinsonmde;
+                font-size: 13px;
+                color: $darkbluemde;
+                font-weight: 400;
+            }
+        }
+
+    }
+
+}

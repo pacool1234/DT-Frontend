@@ -1,0 +1,101 @@
+@import "../../colors";
+
+.main_eventsContainer {
+    background-color: $backcolormde;
+    width: 100vw;
+    // height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    .events_top_header {
+        // position: absolute;
+        position: fixed;
+        margin-top: 30.8%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 6%;
+        margin-right: 6%;
+        align-items: baseline;
+        justify-content: space-around;
+        z-index: 1;
+        background-color: $backcolormde;
+
+        .events_title {
+            font-family: $spectralmde;
+            font-weight: 800;
+            font-size: 28px;
+            color: $darkbluemde;
+        }
+
+        .tipImgContainer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            margin-left: 74px;
+            position: relative;
+            top: -8px;
+
+
+            .toolTipFather {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .tooltipArrow {
+                    border-radius: 0.2rem;
+                    width: 0;
+                    height: 0;
+                    border: 8px solid $lightbluemde;
+                    transform: rotate(45deg);
+                    margin-left: -8px;
+                }
+
+                .tooltipText {
+                    font-family: $atkinsonmde;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $darkbluemde;
+                    margin-left: 10px;
+                    margin-right: 10px;
+
+                }
+
+
+
+            }
+
+        }
+    }
+
+    .div_img_points {
+        position: fixed;
+        margin-top: -16.8%;
+        margin-left: 2%;
+        left: 50%;
+        transform: translateX(50%);
+        z-index: 1;
+
+    }
+
+    .tooltipTextContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $lightbluemde;
+        border-radius: 0.6rem;
+        height: 4.5vh;
+        z-index: 2;
+    }
+
+    .go_to_calendar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 2;
+        // height: 7vh;
+    }
+}

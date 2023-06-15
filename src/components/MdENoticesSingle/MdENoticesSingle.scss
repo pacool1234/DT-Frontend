@@ -1,0 +1,196 @@
+@import "../../colors";
+
+.scroll_container_single_notices {
+    background-color: $backcolormde;
+    margin-bottom: 17%;
+    height: 100vh;
+
+    .main_div_single_notices {
+        background-color: $backcolormde;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main_img_single_notice {
+            margin-top: 30.9%;
+        }
+
+        .return_to_home_button {
+            background-color: rgba(0, 67, 104, 1);
+            border-radius: 50%;
+            width: 5.3%;
+            margin-top: 36%;
+            padding: 1%;
+            z-index: 2;
+            position: absolute;
+            display: flex;
+            padding-left: 2%;
+            margin-left: -77%;
+
+        }
+
+        .main_div_text_single_notices {
+            background-color: $backcolormde;
+            width: 100%;
+            justify-content: center;
+
+            .content_in_text_single_notices {
+                width: 86%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+
+                .published_time {
+                    margin-top: 3%;
+                    display: flex;
+                    justify-content: left;
+                    font-family: $atkinsonmde;
+                    font-size: 13px;
+                    color: $graymde;
+                }
+
+                .title_notice_single_notices {
+                    margin-top: 2%;
+                    font-family: $spectralmde;
+                    font-size: 31px;
+                    font-weight: bold;
+                    color: $darkbluemde;
+                }
+
+                .body_notice_single_notices {
+                    margin-top: 3%;
+                    font-family: $atkinsonmde;
+                    font-size: 15px;
+                    color: #3A3A3A;
+                    text-align: left;
+                    margin-bottom: 3%;
+
+                }
+
+                .separator_line_single_notices {
+                    width: 100%;
+                    border: none;
+                    background-color: $lightbluemde;
+                    height: 1.7px;
+                    margin-bottom: 3%;
+                }
+            }
+        }
+
+        .div_add_comments {
+            background-color: $backcolormde;
+            width: 100%;
+
+
+            .div_background_comment {
+                margin: auto;
+                width: 86%;
+
+                .comment_label {
+                    display: flex;
+                    justify-content: left;
+                    font-family: $atkinsonmde;
+                    color: $orangemde;
+                    font-size: 18px;
+                }
+
+                .input_div_with_button {
+                    display: flex;
+                    flex-direction: row;
+
+                    .comment_input {
+                        margin-top: 3%;
+                        width: 82%;
+                        height: 28px;
+                        padding: 5px 8px;
+                        border: 1px solid $orangemde;
+                        border-radius: 4px;
+                    }
+
+                    .send_button_div {
+                        margin-top: 5%;
+                        height: 28px;
+                        border: none;
+                        background-color: transparent;
+
+                    }
+                }
+            }
+        }
+
+        .main_container_all_notices {
+            margin-bottom: 18%;
+            margin-top: 5%;
+            background-color: $backcolormde;
+            width: 100%;
+            .div_show_all_comments {                
+                background-color: $backcolormde;
+                width: 100%;
+                justify-content: center;
+                                            
+
+                .user_profile_comments {
+                    margin: auto;
+                    width: 86%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 3%;
+                    margin-bottom: -1.5%;
+
+                    .user_name_comments {
+                        font-size: 15px;
+                        font-family: $atkinsonmde;
+                        color: $darkbluemde;
+                        font-weight: bold;
+                    }
+
+                    .user_name_userType_comments {
+                        font-size: 15px;
+                        font-family: $atkinsonmde;
+                        color: $darkbluemde;
+                    }
+                }
+
+                .body_user_comment_profile {
+                    display: flex;
+                    flex-direction: row;
+                    width: 86%;
+                    margin: auto;
+                    gap: 5%;
+                    margin-bottom: -1.5%;
+
+                    .user_img_profile_comments {
+
+
+                        .userimgcomm {
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 50%;
+                            
+                        }
+                    }
+
+                    .body_text_comments {
+                        font-size: 15px;
+                        font-family: $atkinsonmde;
+                        color: #3A3A3A;
+                        text-align: left;
+                        margin-top: 2%;
+                    }
+                }
+
+                .separator_line_comments_single_notices {
+                    width: 20%;
+                    border: none;
+                    background-color: $lightbluemde;
+                    height: 1.7px;
+                    margin-top: 5%;
+                    margin-left: 7%;
+                    
+                }
+
+            }
+        }
+    }
+}

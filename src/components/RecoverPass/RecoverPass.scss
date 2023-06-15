@@ -1,0 +1,125 @@
+@import "../../colors";
+
+.main-cont-recov {
+    background-color: $creammde;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -2;
+
+    .a_logo {
+        position: absolute;
+        margin-top: 17%;
+        margin-left: -68%;
+
+        img {
+            position: relative;
+        }
+    }
+
+    .points_up {
+        position: absolute;
+        margin-top: 23%;
+        margin-left: -66%;
+
+        img {
+            position: relative;
+        }
+    }
+
+    .recov_message {
+        position: absolute;
+        margin-top: 88%;
+        font-family: $atkinsonmde;
+        font-weight: 700;
+        font-size: 22px;
+        color: $darkbluemde;
+    }
+
+    .div_recovForm {
+        margin-top: 96%;
+        width: 80%;
+        position: absolute;
+
+        .recov_form {
+            position: relative;
+            margin-top: 7%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+
+            .pass_label_recov {
+                color: $darkbluemde;
+                text-align: left;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .password_input_recov {
+                margin-top: 4.5%;
+                height: 28px;
+                padding: 5px 8px;
+                border: 1px solid $orangemde;
+                border-radius: 4px;
+
+                &::placeholder {
+                    color: rgba(132, 124, 123, 0.5);
+                }
+            }            
+            
+            .submitRecov {
+                position: absolute;
+                width: 100%;
+                margin-top: 28%;
+                background-color: $darkbluemde;
+                height: 42px;
+                border: 1px solid $darkbluemde;
+                border-radius: 4px;
+                font-size: 16px;
+                color: $creammde
+            }
+        }
+    }
+    
+    .alert_hidden_recov {
+        font-family: $atkinsonmde;
+        font-weight: 400;
+        font-size: 14px;
+        color: $darkbluemde;
+        margin-top: 132%;
+        width: 72%;
+        align-content: center;                   
+    }
+
+    .points_down {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        margin-top: 180%;
+        margin-right: -1.5%;
+    }
+
+    .return_to_login_recov {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        width: 20%;
+        height: 30px;
+        gap: 6px;
+        margin-top: 195%;
+        font-size: 16px;
+        color: $darkbluemde;
+        text-decoration: none;
+        margin-left: -56%;
+        align-items: center;
+
+        .img_fech {
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+}

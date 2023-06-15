@@ -1,0 +1,126 @@
+@import "../../colors";
+
+
+.main_menu_container {
+    background-color: $creammde;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -2;
+
+
+    .close_menu_button{
+        position: absolute;
+        margin-top: 35%;
+        margin-right: -80%;
+      
+        .icon_close{
+            width: 35px;
+        }
+    }
+
+    .title_menu {
+        position: absolute;
+        margin-top: 41%;
+        font-family: $atkinsonmde;
+        width: 100%;
+
+        .title_menu_tile {
+            color: #3A3A3A;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .date_menu_title {
+            margin-top: -8%;
+            color: #3A3A3A;
+            font-size: 17px;
+        }
+
+        .separator_menu_title {
+            width: 70%;
+            border: none;
+            background-color: $orangemde;
+            height: 1.7px;
+
+
+        }
+    }
+
+    .first_dinner {
+        position: absolute;
+        margin-top: 78%;
+        width: 80%;
+
+        .first_dinner_title {
+            font-family: $atkinsonmde;
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 6%;
+        }
+
+        .first_dinner_menu1,
+        .first_dinner_menu2,
+        .first_dinner_menu3 {
+            margin-top: -5%;
+            font-family: $atkinsonmde;
+            text-align: left;
+            font-size: 16.5px;
+        }
+    }
+    .second_dinner {
+        position: absolute;
+        margin-top: 110%;
+        width: 80%;
+
+        .second_dinner_title {
+            font-family: $atkinsonmde;
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 6%;
+        }
+
+        .second_dinner_menu1,
+        .second_dinner_menu2,
+        .second_dinner_menu3 {
+            margin-top: -5%;
+            font-family: $atkinsonmde;
+            text-align: left;
+            font-size: 16.5px;
+        }
+    }
+    .sweet_dinner {
+        position: absolute;
+        margin-top: 142%;
+        width: 80%;
+
+        .sweet_dinner_title {
+            font-family: $atkinsonmde;
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 6%;
+        }
+
+        .sweet_dinner_menu1,
+        .sweet_dinner_menu2,
+        .sweet_dinner_menu3 {
+            margin-top: -5%;
+            font-family: $atkinsonmde;
+            text-align: left;
+            font-size: 16.5px;
+        }
+    }
+    .dinner_img{
+        position: absolute;
+        margin-top: 169%;
+       margin-right: -68%;
+        .DinnerFKS{
+            width: 110px;
+        }
+    }
+}

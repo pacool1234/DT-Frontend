@@ -1,0 +1,105 @@
+@import "../../colors";
+
+.chatListContainer {
+  background-color: $backcolormde;
+}
+
+.chatListTitleContainer {
+  margin-top: 132px;
+  background-color: $backcolormde;
+  height: 116px;
+  position: relative;
+  p {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    font-family: $spectralmde;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 40px;
+    color: $darkbluemde;
+  }
+  .pointsImage {
+    position: absolute;
+    top: -25px;
+    left: 310px;
+  }
+}
+
+.switchingButtonsContainer {
+  button {
+    border: none;
+    width: 50%;
+    height: 43px;
+    font-family: $atkinsonmde;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .single {
+    background-color: $darkbluemde;
+    color: $creammde;
+  }
+  .group {
+    background-color: $creammde;
+    color: $darkbluemde;
+  }
+}
+
+.chatListDiv {
+  margin-bottom: 76px;
+  background-color: $backcolormde;
+  .chatItem {
+    display: flex;
+    margin: 10px 0px;
+    background-color: $whitemde;
+    .imageDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      .imageContainer {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        img {
+          width: 60px;
+        }
+      }
+    }
+    .chatInfo {
+      margin-left: 20px;
+      width: 304px;
+      .namePlusDate {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .leftUsername {
+          text-align: left;
+        }
+        .rightTime {
+          text-align: right;
+          margin-right: 20px;
+          font-family: $atkinsonmde;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          color: $graymde;
+        }
+      }
+      p {
+        text-align: left;
+      }
+      .firstRowOfMessage {
+        color: red;
+      }
+    }
+  }
+}

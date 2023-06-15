@@ -1,0 +1,139 @@
+@import "../../colors";
+
+.profileContainer {
+  margin-top: 132px;
+  padding-bottom: 100px;
+  background-color: $backcolormde;
+  min-height: 740px;
+  width: 435px;
+  .imageContainer {
+    height: 180px;
+    position: relative;
+    .editButton {
+      position: absolute;
+      top: 140px;
+      left: 385px;
+      background-color: $darkbluemde;
+      border: none;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .editIcon {
+        color: #FFFFFF;
+        font-size: 16px;
+      }
+    }
+    .profileImageContainer {
+      position: relative;
+      top: -100px;
+      z-index: 100;
+      width: 150px;
+      height: 150px;
+      background-color: white;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      img {
+        width: 188px;
+      }
+    }
+  }
+  .gamingContainer {
+    .totalPoints {
+      color: $darkbluemde;
+      font-family: $atkinsonmde;
+      font-weight: 700;
+      font-size: 22px;
+      margin: 10px 0 0px 0;
+    }
+    .howTo {
+      font-family: $atkinsonmde;
+      font-weight: 400;
+      font-size: 13px;
+      color: #847c7b;
+      margin-top: 0px;
+      margin-bottom: 25px;
+    }
+    .progressBar {
+      margin-bottom: 10px;
+    }
+  }
+  .profileInfoContainer {
+    display: flex;
+    flex-direction: column;
+    p {
+      text-align: left;
+      margin-left: 25px;
+      margin-bottom: 10px;
+    }
+    .profileUsername {
+      color: $darkbluemde;
+      font-family: $spectralmde;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    .profileUsertype {
+      margin-bottom: 10px;
+      color: #3a3a3a;
+      font-family: $atkinsonmde;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .profilePosition,
+    .profileDegree {
+      margin: 2px 0px 2px 25px;
+      color: #3a3a3a;
+      font-family: $atkinsonmde;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .profileBio {
+      padding-right: 25px;
+      color: $graymde;
+      font-family: $atkinsonmde;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .profileTitle {
+      color: $darkbluemde;
+      font-family: $atkinsonmde;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 21px;
+    }
+    .interestsContainer,
+    .hobbiesContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      margin-left: 25px;
+      .item {
+        color: $darkbluemde;
+        font-family: $atkinsonmde;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 4px 8px;
+        background: $lightbluemde;
+        border-radius: 16px;
+        margin: 0px 10px 15px 0px;
+      }
+    }
+  }
+}

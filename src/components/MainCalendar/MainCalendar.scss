@@ -1,0 +1,63 @@
+@import "../../colors";
+
+.main_calendar_container {
+    background-color: $backcolormde;
+    width: 100vw;
+    // height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -2;
+
+    .top_background_calendar {
+        width: 100%;
+        background-color: aqua;
+
+        .calendar_top_header {
+            // position: absolute;
+            position: fixed;
+            margin-top: 30.8%;
+            display: flex;
+            flex-direction: row;
+            width: 88%;
+            margin-left: 6%;
+            margin-right: 6%;
+            justify-content: space-between;
+            z-index: 2;
+            gap: 10%;            
+
+            .my_events_title {
+                font-family: $spectralmde;
+                font-weight: 800;
+                font-size: 28px;
+                color: $darkbluemde;
+
+            }
+
+            .tipImgContainer_calendar {
+                margin-top: 7%;
+            }
+
+        }
+    }
+
+    .div_img_points {
+        position: fixed;
+        margin-top:14%;
+        margin-left: 67%;
+        z-index: 0;
+
+    }
+
+    .tooltipTextContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $lightbluemde;
+        border-radius: 0.6rem;
+        height: 4.5vh;
+        z-index: 2;
+    }
+
+
+}

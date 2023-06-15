@@ -1,0 +1,499 @@
+@import "../../colors";
+
+
+.main_container_navigation_events {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    width: 92vw;
+
+    //EVENT UP FIXED
+    .eventRecomendFixed {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        padding-top: 65%;
+        background-image: url('/src/images/Event_UpFixed.png');
+        background-size: contain;
+        background-position: center;
+    }
+
+
+    //TEXT : RECOMENDADOS PARA TI
+    .sideText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: $spectralmde;
+        font-weight: 600;
+        font-size: 17px;
+        color: $darkbluemde;
+        margin-bottom: 4px;
+        margin-top: 25px;
+    }
+
+    //SIDE X SCROLL GLOBAL CONTAINER (needed to keep the X scroll)
+    .eventSideScroll {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 40px;
+        max-height: 20vh;
+
+        //SIDE X SCROLL MAIN CONTAINER 
+
+        .eventSideArray {
+            display: flex;
+            flex-direction: row;
+            align-content: flex-start;
+            max-height: 20vh;
+            column-gap: 10px;
+
+            //SMALL CARD
+            .eventside1 {
+                display: flex;
+                flex-direction: column;
+                width: 251px;
+                height: 20vh;
+                margin-bottom: 38%;
+
+                //MITAD DE ARRIBA
+                .sideUpContainer {
+                    display: flex;
+                    flex-direction: column;
+                    height: 50%;
+                    width: 251px;
+                    background-size: auto;
+                    background-position: center;
+                    background-image: url('/src/images/0_CardSmall_TEST.png');
+                    background-repeat: no-repeat;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+
+                    // ICON ARROW
+
+                }
+
+                //MITAD DE ABAJO
+                .sideDownContainer {
+                    display: flex;
+                    flex-direction: row;
+                    height: 50%;
+                    width: 251px;
+                    background-color: $orangemde;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+
+                    .downLeft {
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+
+
+                        .leftEventType {
+                            align-self: flex-start;
+                            margin-top: 7px;
+                            margin-bottom: 0;
+                            margin-right: 0;
+                            margin-left: 20px;
+                            font-family: $atkinsonmde;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: $creammde;
+                        }
+
+                        .leftEventTitle {
+                            align-self: flex-start;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-right: 0;
+                            margin-left: 20px;
+                            font-family: $atkinsonmde;
+                            font-size: 17px;
+                            font-weight: 600;
+                            color: $creammde;
+
+                        }
+
+                        .leftEventTime {
+                            align-self: flex-start;
+                            margin-top: 8px;
+                            margin-bottom: 0;
+                            margin-right: 0;
+                            margin-left: 20px;
+                            font-family: $atkinsonmde;
+                            font-size: 10px;
+                            font-weight: 400;
+                            color: $creammde;
+                        }
+
+                        .leftEventDate {
+                            align-self: flex-start;
+                            margin-top: -2px;
+                            margin-bottom: 0;
+                            margin-right: 0;
+                            margin-left: 20px;
+                            font-family: $atkinsonmde;
+                            font-weight: 400;
+                            font-size: 10px;
+                            color: $creammde;
+                        }
+                    }
+
+                    .downRight {
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        .rightButtonTag1 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            background-color: $lightbluemde;
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            height: 20px;
+                            margin-bottom: 10px;
+
+                            .tagText1 {
+                                font-family: $atkinsonmde;
+                                font-size: 9px;
+                                color: $darkbluemde;
+                                font-weight: lighter;
+                                margin-left: 10px;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        .rightButtonTag2 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            background-color: $lightbluemde;
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            height: 20px;
+                            margin-bottom: 10px;
+
+                            .tagText2 {
+                                font-family: $atkinsonmde;
+                                font-size: 9px;
+                                color: $darkbluemde;
+                                font-weight: lighter;
+                                margin-left: 10px;
+                                margin-right: 10px;
+
+                            }
+                        }
+
+                    }
+                }
+
+
+
+            }
+
+        }
+
+    }
+
+
+    .eventDownText {
+        display: flex;
+        flex-direction: column;
+
+        .downText {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-family: $spectralmde;
+            font-weight: 600;
+            font-size: 17px;
+            color: $darkbluemde;
+            margin-top: 5px;
+        }
+    }
+
+
+    .eventList_Down {
+        margin-top: -15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        row-gap: 10px;
+        margin-bottom: 26%;
+
+        //BIG CARD
+        .eventBig1 {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            width: 100%;
+            height: 33vh;
+            margin-bottom: 2%;
+
+            //MITAD DE ARRIBA
+            .bigUpContainer {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                height: 60%;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+
+                // ICON ARROW
+
+
+                .img_event_box {
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    .img_events_top {
+                        width: 100%;
+                        height: 75%;
+                        border-radius: 10px;
+                    }
+                }
+
+                .iconarrowblue {
+                    position: absolute;
+                    align-self: center;
+                    margin-top: 22%;
+                    margin-right: 10px;
+                    right: 6%;
+
+                }
+
+
+
+                //MITAD DE ABAJO
+
+
+                .bigDownContainer {
+                    display: flex;
+                    flex-direction: row;
+                    align-content: space-between;
+                    margin-top: -30%;
+                    height: 80%;
+                    width: 100%;
+                    background-color: $orangemde;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+
+                    .bDownLeft {
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+
+
+                        .bLeftEventType {
+                            align-self: flex-start;
+                            margin-top: 10px;
+                            margin-bottom: 0;
+                            margin-right: 0;
+                            margin-left: 20px;
+                            font-family: $atkinsonmde;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: $creammde;
+                        }
+
+                        .bLeftEventTitle {
+                            width: 90%;
+                            align-self: flex-start;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-right: 0;
+                            margin-left: 20px;
+                            font-family: $atkinsonmde;
+                            font-size: 15px;
+                            font-weight: 600;
+                            color: $creammde;
+                            text-align: left;
+                        }
+
+                        .time_main_container_events {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 10px;
+
+                            .bLeftEventTime {
+                                align-self: flex-start;
+                                margin-bottom: 0;
+                                margin-right: 0;
+                                margin-left: 20px;
+                                font-family: $atkinsonmde;
+                                font-size: 10px;
+                                font-weight: 400;
+                                color: $creammde;
+                            }
+
+                            .bLeftEventDate {
+                                align-self: flex-start;
+
+                                margin-bottom: 1px;
+                                margin-right: 0;
+                                margin-left: 20px;
+                                font-family: $atkinsonmde;
+                                font-weight: 400;
+                                font-size: 10px;
+                                color: $creammde;
+                            }
+
+                        }
+                    }
+
+                    .bDownRight {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin-top: 1px;
+                        margin-right: 2%;
+                        width: 40%;
+
+                        .bRightButtonTag1 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-self: flex-end;
+                            margin-bottom: -10%;
+                            margin-right: 5%;
+
+                            .bTagText1 {
+                                font-family: $atkinsonmde;
+                                font-size: 9px;
+                                color: $darkbluemde;
+                                font-weight: lighter;
+                                background-color: $lightbluemde;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 3px;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                            }
+                        }
+
+                        .bRightButtonTag2 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-self: flex-end;
+                            margin-bottom: -10%;
+                            margin-right: 5%;
+
+                            .bTagText2 {
+                                font-family: $atkinsonmde;
+                                font-size: 9px;
+                                color: $darkbluemde;
+                                font-weight: lighter;
+                                background-color: $lightbluemde;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 3px;
+                                padding-left: 10px;
+                                padding-right: 10px;
+
+                            }
+                        }
+
+                        .bRightButtonTag3 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-self: flex-end;
+                            margin-bottom: -10%;
+                            margin-right: 5%;
+
+                            .bTagText3 {
+                                font-family: $atkinsonmde;
+                                font-size: 9px;
+                                color: $darkbluemde;
+                                font-weight: lighter;
+                                background-color: $lightbluemde;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 3px;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                            }
+                        }
+
+                        .bRightButtonTag4 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-self: flex-end;
+                            margin-right: 5%;
+
+
+                            .bTagText4 {
+                                font-family: $atkinsonmde;
+                                font-size: 9px;
+                                color: $darkbluemde;
+                                font-weight: lighter;
+                                background-color: $lightbluemde;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 3px;
+                                padding-left: 10px;
+                                padding-right: 10px;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        // .eventDown2 {
+        //     display: flex;
+        //     flex-shrink: 1;
+        //     border-radius: 10px;
+        //     width: 100%;
+        //     background-image: url('/src/images/Event_Down_2.png');
+        //     background-size: auto;
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        //     height: 33vh;
+        // }
+
+        // .eventDown3 {
+        //     display: flex;
+        //     flex-shrink: 1;
+        //     border-radius: 10px;
+        //     width: 100%;
+        //     background-image: url('/src/images/Event_Down_3.png');
+        //     background-size: auto;
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        //     height: 33vh;
+        //     margin-bottom: 30%;
+        // }
+    }
+}

@@ -1,0 +1,80 @@
+@import "../../colors";
+
+.main-cont-blocked {
+    background-color: $creammde;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -2;
+
+    .a_logo {
+        position: absolute;
+        margin-top: 17%;
+        margin-left: -68%;
+
+        img {
+            position: relative;
+        }
+    }
+
+    .points_up {
+        position: absolute;
+        margin-top: 23%;
+        margin-left: -66%;
+
+        img {
+            position: relative;
+        }
+    }
+
+    .all_text_blocked{
+        width: 80%;
+        margin-top: 75%;
+
+        .div_text_blocked{
+            font-family: $atkinsonmde;
+            font-weight: 700;
+            font-size: 22px;
+            color: $darkbluemde;
+        }
+
+        .div_text_blocked1,
+        .div_text_blocked2{
+            font-family: $atkinsonmde;
+            font-weight: 400;
+            font-size: 17.5px;
+            color: $darkbluemde;
+        }
+
+    }
+
+     
+    .points_down {
+        position: absolute;
+        
+        
+        margin-top: 155%;
+        margin-right: -66%;
+    }
+
+    .return_to_login{
+        position: absolute;
+        width: 80%;
+        margin-top: 192%;
+        background-color: $darkbluemde;
+        height: 42px;
+        border: 1px solid $darkbluemde;
+        border-radius: 4px;
+        font-size: 16px;
+        color: $creammde;
+
+        &:disabled {
+            color: $graymde; 
+          }
+    }
+
+
+}
+
